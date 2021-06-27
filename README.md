@@ -58,14 +58,24 @@ KNN | 71.00 | 6.38 | 84.10 | 1.70
 Decision Tree Classifier | 60.25 | 4.16 | 78.31 | 2.25
 
 
-I used the ROC AUC Mean score to assess each model. The area under the ROC curve is a good performance metric for binary classification. In the table above, a score of 100 would be a perfectly predictive model, while a score closer to 50 means the model is as good as a random classification. I moved ahead to the next stage of modelling with the three best AUC mean scores: **Support Vector Classification**, **Logistic Regression**, & **XGBoost Classifier**. After doing some research into employee attrition and predictive modelling, I discovered that Logistic Regression is generally regarded as the wrong algorithm for employee attrition models, so I added **Random Forest Classifier** into my next step, for good measure.
+I used the ROC AUC Mean score to assess each model. The area under the ROC curve is a good performance metric for binary classification. In the table above, a score of 100 would be a perfectly predictive model, while a score closer to 50 means the model is as good as a random classification. I moved ahead to the next stage of modelling with the three best AUC mean scores: **Support Vector Classification**, **Logistic Regression**, & **XGBoost Classifier**. 
 
-#### Tuning Parameters
+**Note:** After doing some research into employee attrition and predictive modelling, I discovered that Logistic Regression is generally regarded as the wrong algorithm for employee attrition models. 
+
+### Tuning Parameters
 I went through tutorial after tutorial to learn how to tune algorithm parameters, and I'm happy with the progress in this project! The code I used is in the notebook, but here are the results:
 
-***Support Vector Machine Classifier***
+#### ***Support Vector Machine Classifier***
+
 ![image](https://user-images.githubusercontent.com/64986521/123563200-4875ef00-d7ab-11eb-95e7-737b4e18f357.png)
 
+#### ***Logistic Regression***
+
+![image](https://user-images.githubusercontent.com/64986521/123563248-896e0380-d7ab-11eb-9592-82b9fb026309.png)
+
+#### ***XGBoost Classifier***
+
+![image](https://user-images.githubusercontent.com/64986521/123563295-dd78e800-d7ab-11eb-8c4f-83f183c1cac3.png)
 
 
 
