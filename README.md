@@ -79,7 +79,16 @@ I went through tutorial after tutorial to learn how to tune algorithm parameters
 
 
 
+### Feature Importances & SHAP Values
+From the results above, I selected XGBoost as my optimal algorithm. It not only had the highest ROC AUC mean score, but it also showed the best improvement in score from baseline through parameter tuning. Onto exploring the features with SHAP values! [Here](https://towardsdatascience.com/shap-explained-the-way-i-wish-someone-explained-it-to-me-ab81cc69ef30) is a great explanation for what exactly SHAP values are, and [here](https://towardsdatascience.com/explain-your-model-with-the-shap-values-bc36aac4de3d) is a great example for how to use them! Super helpful stuff. If you want to do a bit of learning, here is the [documentation on github](https://github.com/slundberg/shap).
 
+***Shap values***
+
+![image](https://user-images.githubusercontent.com/64986521/123563582-7a885080-d7ad-11eb-997e-3361bfbfac4e.png)
+
+
+***Impact of a higher or lower feature value on model output***
+![image](https://user-images.githubusercontent.com/64986521/123563613-a277b400-d7ad-11eb-83fa-927f710e1f6e.png)
 
 
 
