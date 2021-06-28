@@ -91,11 +91,21 @@ From the results above, I selected XGBoost as my optimal algorithm. It not only 
 ![image](https://user-images.githubusercontent.com/64986521/123563613-a277b400-d7ad-11eb-83fa-927f710e1f6e.png)
 
 
+Overtime is a very important feature in this data set, and is one of the more predictive of employee attrition of all the features we have. I used SHAP values to isolate overtime into two cohorts, with values equal to or above .5 and values below .5 . The following image shows the impact of an overtime value within those two ranges:
+
+***Overtime is highly predicitve of employee attrition***
+![image](https://user-images.githubusercontent.com/64986521/123563731-35185300-d7ae-11eb-8f2f-8b4ffe308e0f.png)
 
 
+### Conclusion & Next Steps
+This is my second major machine learning project, and I am really happy with the results! I learned a lot taking on this problem; I did a lot of outside research to build some of the functions used in this notebook, and into using SHAP values to explain predictability. As I mentioned above, my former role involved strategies to minimize overhead costs in hiring and onboarding, and the results from this project would have been helpful to know!
+
+**A few takeaways, lessons learned, and future steps:**
+- Based on this dataset, overtime is highly predictive of employee attrition. In this dataset, employees either **had** overtime (1) or **did not** have overtime (0). In the real world, overtime is unlikely to be classified so easily. If I revisit this project, I'd examine data that has more realistic values, but in this case it is safe to say that employees with overtime are more likly to leave work for a new opportunity than those without overtime.
+- There are seven feautures in this dataset that had feature importances within a good range of each other: job role, stock option level, number of companies worked, age, environment satisfaction, monthly income, and distance from home. Employers should be aware of these impactful factors in employee attrition, and manage both company and employee expectations given higher or lower values for each of these seven features. For instance, a younger employee with a low income level and longer commute is highly likely to leave a company, compared to other employees. This may seem like common sense, but it can be difficult for people managers to be aware of these factors when managing their employees and planning hiring strategies.
+- SHAP values are an easy-to-use tool to explain predictability, and I'll continue to expand understanding of how to apply them to projects.
+- I learn better by pinpointing one or two steps in a project, and building skills that help manage those steps. It doesn't mean doing the rest of the project halfway; it just helps me focus on skills I want to improve.
+- Mentors are easily the most helpful 'skill.' I've worked with Rafa Castillo on two projects, and his encouragement, tips and overall positivity help me stay focused when I am stuck on a problem. Tip for other newbies like me: get a mentor.
 
 
-
-
-
-
+I hope you enjoyed this project brief; I am happy to take on advice if you have any to share!
